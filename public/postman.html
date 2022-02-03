@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title>Page Title</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+   <script src="https://cdn.tailwindcss.com"></script>
+   <script src="js/main.js" type="module"></script>
+  </head>
+  <body class="container">
+    <h1>Postman simulator</h1>
+
+<div class="w-full max-w-xs">
+
+    <form action="/api/users" method="post">
+      <input
+        class="shadow mb-2 appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
+        name="nombre"
+        placeholder="nombre"
+        type="text"
+        value="mi_nombre_2"
+      />
+      <input
+      class="shadow mb-2 appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
+        name="password"
+        placeholder="pass"
+        type="password"
+        value="123456"
+      />
+      <input
+      class="shadow mb-2 appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
+        name="correo"
+        placeholder="correo"
+        type="text"
+        value="test1@mail.com"
+      />
+      <input 
+      class="shadow mb-2 appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
+      name="rol" placeholder="rol" type="text" value="USER_ROLE" />
+      <input
+      class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded focus:outline-none focus:shadow-outline"
+       type="submit" value="enviar" />
+    </form>
+
+</div>
+
+    <table class="mt-4 border-collapse border-2 border-gray-500">
+      <thead>
+        <tr>
+          <th class="p-2 border border-gray">Nombre</th>
+          <th class="p-2 border border-gray">Correo</th>
+          <th class="p-2 border border-gray">Role</th>
+        </tr>
+      </thead>
+
+      <tbody id="listado">
+
+      </tbody>
+    </table>
+  </body>
+</html>
+
+
